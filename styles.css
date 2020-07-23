@@ -1,0 +1,118 @@
+/*  Header Section    */
+ /* html{ 
+     font-size: 3vw; 
+     } */
+
+body {
+    padding:2em;
+    font-family: Montserrat, Arial
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+h1.top-title {
+    text-align:center;
+    font-size: 25px;
+}
+
+h2.top-subtitle {
+    text-align:center;
+    padding-top:1em;
+    font-size:16px;
+    text-align: center
+}
+
+
+
+/***** END Header Section    */
+
+
+
+/*  Newsletter Body Section    */
+
+div.main-content {
+    margin-top:2em;
+    margin-bottom:3em;
+}
+
+div.image-box {
+    width: 152px;
+    height: 104px;
+    max-width: 100%;
+    max-height:100%;
+    background-color:#D8D8D8
+}
+
+h1.news-title {
+    font-size:20px;
+    font-weight:800
+}
+
+p.subttitle-title {
+    font-size:20px;
+    font-weight:800
+}
+
+.checkbox-round {
+    width: 40px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    border-color: #4292F4;
+}
+
+
+.checkbox-round:checked {
+    color: #4292F4;
+}
+
+
+
+
+/****** END Newsletter Body Section    */
+
+
+/*  Submission Section    */
+
+
+form.submission {
+    max-width: 431px;
+    margin: 0 auto;
+}
+
+div.submit-button {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+/***** END Submission Section    */
+
+
+
+@media(max-width:575.98px) {
+    h1.news-title {
+        font-size:14px;
+        font-weight:800;
+        text-align:center;
+        margin-top:1em;
+    }
+
+    p.subttitle-title {
+        font-size:8px;
+        font-weight:800;
+        text-align:center;
+    }
+
+    div.image-box {
+        margin: 0 auto;
+    }
+}
