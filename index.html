@@ -12,64 +12,77 @@
 	<h1 class="top-title">Newsletters</h1>
 	<h2 class="top-subtitle">Select all the newsletters you'd like to recieve</h2>
 </header>
+
+<form class="submission" method="POST" action="#">
 	<div class="container-fluid">
 		<div class="row main-content"> 
 			<div class="col-sm-3">
-				<div class="image-box"></div>
+			<label for="news1">
+				<div class="image-box box1"></div></label>
 			</div>
 			<div class="col-sm-7">
 				<h1 class="news-title"> Reverse The Online Gaming Ban </h1>
 				<p class="news-subtitle"> The MPA comes with three different sizes of foam and silicone tips and a carrying pouch.</p>
 			</div>
 			<div class="col-sm-2">
-				<input type="checkbox" class="checkbox-round" ></input>
+				<input type="checkbox" class="checkbox-round" value="news1" id="news1" name="news1"></input>
 			</div>
 		</div>		
+		<div class="border-bottom"></div>
 		<div class="row main-content"> 
 			<div class="col-sm-3">
-				<div class="image-box"></div>
+			<label for="news2">
+				<div class="image-box box2"></div></label>
 			</div>
 			<div class="col-sm-7">
-				<h1 class="news-title"> Reverse The Online Gaming Ban </h1>
-				<p class="news-subtitle"> The MPA comes with three different sizes of foam and silicone tips and a carrying pouch.</p>
+				<h1 class="news-title"> Successful Myspace Profile </h1>
+				<p class="news-subtitle"> All users on MySpace will know that there are millions of people out there.</p>
 			</div>
 			<div class="col-sm-2">
-				<input type="checkbox" class="checkbox-round"></input>
+				<input type="checkbox" class="checkbox-round" value="news2" id="news2" name="news2"></input>
 			</div>
 		</div>
-				<div class="row main-content"> 
+		<div class="border-bottom"></div>
+			<div class="row main-content"> 
 			<div class="col-sm-3">
-				<div class="image-box"></div>
+			<label for="news3">
+				<div class="image-box box3"></div></label>
 			</div>
 			<div class="col-sm-7">
-				<h1 class="news-title"> Reverse The Online Gaming Ban </h1>
-				<p class="news-subtitle"> The MPA comes with three different sizes of foam and silicone tips and a carrying pouch.</p>
+				<h1 class="news-title"> Home Audio Recording For Everyone </h1>
+				<p class="news-subtitle"> The number of friends and acquaintances will grow in a large number. This is what you should be looking for.</p>
 			</div>
 			<div class="col-sm-2">
-				<input type="checkbox" class="checkbox-round"></input>
+				<input type="checkbox" class="checkbox-round" value="news3" id="news3" name="news3"></input>
 			</div>
 		</div>
-				<div class="row main-content"> 
+		<div class="border-bottom"></div>
+		<div class="row main-content"> 
 			<div class="col-sm-3">
-				<div class="image-box"></div>
+			<label for="news4">
+				<div class="image-box box4"></div></label>
 			</div>
 			<div class="col-sm-7">
-				<h1 class="news-title"> Reverse The Online Gaming Ban </h1>
-				<p class="news-subtitle"> The MPA comes with three different sizes of foam and silicone tips and a carrying pouch.</p>
+				<h1 class="news-title"> Buying Used Electronic Test </h1>
+				<p class="news-subtitle"> People after all will make friends after reading about you.</p>
 			</div>
 			<div class="col-sm-2">
-				<input type="checkbox" class="checkbox-round"></input>
+				<input type="checkbox" class="checkbox-round" value="news4" id="news4" name="news4"></input>
 			</div>
 		</div>
 	</div>
 
-<form class="submission">
+<div class="submit-container">
   <div class="form-group">
-    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" name="email"  class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
   </div>
-  <div style="submit-button"><button type="submit" class="btn btn-primary">Submit</button></div>
-	<input type="checkbox"> <small id="emailHelp" class="text-muted">I do not want to receive information about future newsletters.</small>
+  <div><button type="submit" class="btn btn-primary submit-button">Submit</button></div>
+	<input type="checkbox" name="subscribe_newsletter" value="yes"> <small id="emailHelp" class="text-muted">I do not want to receive information about future newsletters.</small>
+	</div>
 </form>
+
+
+
 
 <script src="./main.js"></script>
 </body>

@@ -1,19 +1,18 @@
-const checkboxes = document.querySelectorAll("input[type=checkbox]");
-const submit = document.querySelector(".submit");
+const form = document.querySelector('form');
 
-function getChecked() {
-  var checked = [];
-  for (var i = 0; i < checkboxes.length; i++) {
-    let checkbox = checkboxes[i];
-    if (checkbox.checked) {
-        checked.push(checkbox.value);
-    }
-     return checked;
-  }
+ form.addEventListener('submit', function(e){ 
+    e.preventDefault()
+    setTimeout(function() {
+    
+  const values = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
+    .map(item => item.value)
+
+    if(values.length === 0) {
+          alert("Error! Nothing selected")
+      }
+      else {
+          alert("Successfully submitted!")
+      };
+    },2000)
 }
-
-submit.addEventListener("click", function() {
-  let checked = getChecked();
-  console.log(checked);
-});
-
+ );
